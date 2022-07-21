@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88332117-c026-4115-a9b3-376f2dd7ad86" name="Changes" comment="Init commit with simple get /group respond">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/tidinari/groupcommunication/backend/Test.kt" afterDir="false" />
+    <list default="true" id="88332117-c026-4115-a9b3-376f2dd7ad86" name="Changes" comment="Added generated schedule for groups">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/tidinari/groupcommunication/backend/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/tidinari/groupcommunication/backend/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +147,7 @@
       <workItem from="1658322099948" duration="1446000" />
       <workItem from="1658341364758" duration="5327000" />
       <workItem from="1658393169554" duration="1205000" />
-      <workItem from="1658397856965" duration="15835000" />
+      <workItem from="1658397856965" duration="17345000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit with simple get /group respond">
       <created>1658322833727</created>
@@ -158,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658322833728</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added generated schedule for groups">
+      <created>1658418326855</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658418326855</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +182,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit with simple get /group respond" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit with simple get /group respond" />
+    <MESSAGE value="Added generated schedule for groups" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added generated schedule for groups" />
   </component>
 </project>

@@ -64,6 +64,15 @@ fun main(args: Array<String>) {
                     )
                 )
             }
+            get("/generated-data") {
+                val group = call.parameters["group"] ?: "ТЕСТ-00-00"
+                if (group.contains(group)) {
+                    val file = File("./generated-data/$group.json")
+                    call.respondText(
+                        file.readText()
+                    )
+                }
+            }
         }
     }.start(true)
 }
@@ -116,7 +125,7 @@ fun generateWeeklyLessons(
         val day = Day.getDayFromIndex(rowNum).ordinal
         val lessonInDay = LessonInDay.getLessonInDayFromIndex(rowNum).ordinal
         for (week in weeks) {
-            weekLessonMap[week] = Lesson(cellValue, week, day, lessonInDay, activityType[0], teacher[0], room[0])
+            weekLessonMap[week] = Lesson(cellValue, day, lessonInDay, activityType[0], teacher[0], room[0])
         }
         return weekLessonMap
     }
@@ -133,7 +142,6 @@ fun generateWeeklyLessons(
         for (week in weeks) {
             weekLessonMap[week] = Lesson(
                 lessonTitle,
-                week,
                 Day.getDayFromIndex(rowNum).ordinal,
                 LessonInDay.getLessonInDayFromIndex(rowNum).ordinal,
                 if (index >= activityType.size) activityType.last() else activityType[index],
@@ -208,7 +216,6 @@ data class Group(
 @Serializable
 data class Lesson(
     val name: String,
-    val week: Int,
     val day: Int,
     val lessonInDay: Int,
     val activityType: String,

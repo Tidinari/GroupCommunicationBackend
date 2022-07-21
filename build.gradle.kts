@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     kotlin("jvm") version "1.7.10"
     kotlin("plugin.serialization") version "1.7.10"
+    id("com.github.johnrengelman.shadow") version "7.1.2"
     application
 }
 
@@ -28,6 +29,9 @@ dependencies {
     implementation("io.ktor:ktor-server-default-headers-jvm:$ktorVersion")
     // Serialization
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$serializationVersion")
+    // Excel decoder
+    implementation("org.apache.poi:poi:5.2.2")
+    implementation("org.apache.poi:poi-ooxml:5.2.2")
     // Test
     testImplementation(kotlin("test"))
 }

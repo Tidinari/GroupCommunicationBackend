@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88332117-c026-4115-a9b3-376f2dd7ad86" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/tidinari/groupcommunication/backend/Main.kt" afterDir="false" />
+    <list default="true" id="88332117-c026-4115-a9b3-376f2dd7ad86" name="Changes" comment="Init commit with simple get /group respond">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/tidinari/groupcommunication/backend/Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/tidinari/groupcommunication/backend/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/tidinari/groupcommunication/backend/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +45,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "P:/Projects/Kotlin/GroupCommunicationBackend",
+    "last.edited.regexp": "k 1k 1. 141",
+    "last_opened_file_path": "P:/Projects/Kotlin/AetherRP",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -82,8 +70,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.GroupCommunicationBackend [run]">
-    <configuration name="GroupCommunicationBackend [run]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+  <component name="RunManager" selected="Gradle.GroupCommunicationBackend [build]">
+    <configuration name="GroupCommunicationBackend [build]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -94,7 +82,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="run" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -105,9 +93,6 @@
       <method v="2" />
     </configuration>
     <configuration name="All in generated-requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
-      <method v="2" />
-    </configuration>
-    <configuration name="GroupCommunicationBackend-endpoints_1 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/GroupCommunicationBackend-endpoints_1.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
@@ -127,21 +112,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.tidinari.groupcommunication.backend.TestKt" />
+      <module name="GroupCommunicationBackend.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Gradle.GroupCommunicationBackend [run]" />
+      <item itemvalue="Gradle.GroupCommunicationBackend [build]" />
       <item itemvalue="HTTP Request.All in generated-requests" />
       <item itemvalue="HTTP Request.generated-requests | #1" />
-      <item itemvalue="HTTP Request.GroupCommunicationBackend-endpoints_1 | #1" />
+      <item itemvalue="Kotlin.TestKt" />
       <item itemvalue="Kotlin.MainKt (1)" />
       <item itemvalue="Kotlin.MainKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.TestKt" />
         <item itemvalue="Kotlin.MainKt (1)" />
         <item itemvalue="HTTP Request.generated-requests | #1" />
         <item itemvalue="HTTP Request.All in generated-requests" />
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="HTTP Request.GroupCommunicationBackend-endpoints_1 | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -154,8 +146,19 @@
       <option name="presentableId" value="Default" />
       <updated>1658316058280</updated>
       <workItem from="1658317074212" duration="4149000" />
-      <workItem from="1658322099948" duration="462000" />
+      <workItem from="1658322099948" duration="1446000" />
+      <workItem from="1658341364758" duration="5327000" />
+      <workItem from="1658393169554" duration="1205000" />
+      <workItem from="1658397856965" duration="15835000" />
     </task>
+    <task id="LOCAL-00001" summary="Init commit with simple get /group respond">
+      <created>1658322833727</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658322833728</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,5 +174,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init commit with simple get /group respond" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init commit with simple get /group respond" />
   </component>
 </project>

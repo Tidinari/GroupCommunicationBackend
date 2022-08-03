@@ -21,7 +21,7 @@ fun main(args: Array<String>) {
     val sheet = WorkbookFactory.create(schedule).getSheetAt(0)
 
     val groups = getGroups(sheet).also {
-        it.add(Group(columnIndex = 5))
+        it.add(Group("ТЕСТ-00-00", 5))
     }
     File("./generated-data").mkdirs()
     groups.forEach {
@@ -54,7 +54,7 @@ fun main(args: Array<String>) {
                 call.respondText(builder.toString())
             }
             get("/groups") {
-                call.respondText(Json.encodeToString(groups.map { g -> g.group }))
+                call.respondText(Json.encodeToString(groups))
             }
             get("/groupSchedule") {
                 val group = call.parameters["group"]?.toIntOrNull() ?: 0
@@ -101,7 +101,10 @@ fun getGroupSchedule(group: Group, sheet: Sheet): Map<Int, List<Lesson>> {
             if (cellValue.contains("…"))
                 continue
             val activityType = row.getCell(group.columnIndex + 1).stringCellValue.split("\n")
-            val teacher = row.getCell(group.columnIndex + 2).stringCellValue.split("\n")
+            val teacherCell = row.getCell(group.columnIndex + 2)
+            var teacher = listOf("Ошибка")
+            if (teacherCell.cellType == CellType.STRING)
+                 teacher = teacherCell.stringCellValue.split("\n")
             val room = row.getCell(group.columnIndex + 3).stringCellValue.split("\n")
             val parsedLesson = generateWeeklyLessons(row.rowNum, cellValue, activityType, teacher, room)
             parsedLesson.forEach {
@@ -209,7 +212,7 @@ value class User(@SerialName("id") val userHash: String)
 
 @Serializable
 data class Group(
-    val group: String = "ТЕСТ-00-00",
+    val group: String,
     val columnIndex: Int
 )
 
